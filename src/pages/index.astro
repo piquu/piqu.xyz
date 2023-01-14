@@ -1,0 +1,41 @@
+---
+import Main from "../layouts/Main.astro";
+import Card from "../components/Card.astro";
+---
+
+<Main title="piqu.xyz">
+	<main>
+		<h1><span class="text-gradient">Welcome</span></h1>
+		<ul role="list" class="link-card-grid">
+			<Card title="Github" href="https://github.com/piquu" />
+			<Card title="Tiktok" href="https://www.tiktok.com/@qx_kyu" />
+			
+		</ul>
+	</main>
+</Main>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
