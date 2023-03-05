@@ -91,9 +91,6 @@ a {
   border-width: 2px;
   text-decoration: none;
   text-align: center;
-  padding-top: 13px;
-  /* display: flex; */
-  /* align-self: center; */
-  /* margin: auto; */
-  /* justify-content: center; */
+  padding-top: 11px;
+  font-size: 20px;
 }
